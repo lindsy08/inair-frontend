@@ -1,0 +1,3 @@
+<script>let {titulo='',actualizar=()=>{},cargando=false,crear=null}=$props();</script>
+<div class="fila"><h2>{titulo}</h2><div class="botones"><button class="sec" onclick={actualizar} disabled={cargando}>{cargando?'Consultando…':'Actualizar'}</button>{#if crear}<button onclick={crear}>+ Nuevo registro</button>{/if}</div></div>
+<style>.fila{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}h2{margin:0;font-size:20px;color:#1e3a8a}.botones{display:flex;gap:9px;flex-wrap:wrap}button{background:#1e3a8a;color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer}.sec{background:#e2e8f0;color:#1e293b}button:disabled{opacity:.5;cursor:wait}</style>
